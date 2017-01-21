@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+#smenu_srch .iText
+#smenu_srch button {
+	background-color: #151515;
+}
+
+#login_btn svg.active {
+	/* #151515를 3f3f3f으로 */
+	background-color: #3f3f3f;
+}
+
+#login_window .idpwWrap .login,
+#sider_nav h3 a,
+#sider_nav ul.smenu_3rdlevel {
+	background-color: #2a2a2a;
+}
+
+#sider_nav,
+#login_window .idpw input[type=text],
+#login_window .idpw input[type=password] {
+	background-color: #3f3f3f;
+}
+
+
+#sider_nav ul.smenu_2ndlevel li a {
+	border-bottom: 4px solid #3f3f3f;
+}
+
+a:link, a:visited {
+	color: #555555;
+}
+
+#topheader, .dialog_tline {
+	/* #555555를 000000으로 */
+	background-color: #000000;
+}
+
+
+#header_nav ul li a {
+	/* #555555를 000000으로 */
+	border-bottom: 5px solid #000000;
+}
+
+
+a:active, a:hover {
+	color: #aaaaaa;
+}
+
+/* #555555를 aaaaaa으로 */
+#header_nav ul li.active a               { border-bottom: 5px solid #aaaaaa; }
+#sider_nav ul.smenu_2ndlevel li.active a { border-bottom: 4px solid #aaaaaa; }
+#sider_nav ul.smenu_3rdlevel li.active a { border-bottom: 3px solid #aaaaaa; }
+
+
+#topheader a:active, #topheader a:hover,
+#sider_nav a:active, #sider_nav a:hover,
+#login_window .idpwWrap .login:active,
+#login_window .idpwWrap .login:hover {
+	color: #d4d4d4;
+}
+
+/* #smenu_srch button:active svg .stro,
+#smenu_srch button:hover svg .stro,
+#login_close:active svg .stro,
+#login_close:hover svg .stro,
+#login_btn svg.active .stro {
+	stroke: #d4d4d4;
+}
+
+#login_btn svg.active .poly {
+	fill: #d4d4d4;
+} */
+
+#smenu_srch button:active svg .stro,
+#smenu_srch button:hover svg .stro,
+#login_close:active svg .stro,
+#login_close:hover svg .stro {
+	stroke: #d4d4d4;
+}

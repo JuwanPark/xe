@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.2">
+    <title xml:lang="ko">Sininen</title>
+    <description xml:lang="ko">
+        심플한 반응형 레이아웃 Sininen입니다.
+        제작 : Juwan Park
+    </description>
+    <version>1.0</version>
+    <date>2017-01-21</date>
+    <link>http://parkjuwan.dothome.co.kr/</link>
+
+    <author email_address="park_juwan@naver.com" link="http://parkjuwan.dothome.co.kr/">
+        <name xml:lang="ko">Juwan Park</name>
+    </author>
+
+    <extra_vars>
+        <var name="colorset" type="select">
+            <title xml:lang="ko">컬러셋</title>
+            <description xml:lang="ko">원하는 컬러셋을 선택해주세요.</description>
+            <options value="blue">
+                <title xml:lang="ko">파란색</title>
+            </options>
+            <options value="violet">
+                <title xml:lang="ko">제비꽃색</title>
+            </options>
+            <options value="purple">
+                <title xml:lang="ko">보라색</title>
+            </options>
+            <options value="deeppink">
+                <title xml:lang="ko">진분홍</title>
+            </options>
+            <options value="red">
+                <title xml:lang="ko">빨간색</title>
+            </options>
+            <options value="brown">
+                <title xml:lang="ko">황갈색</title>
+            </options>
+            <options value="yellow">
+                <title xml:lang="ko">노란색</title>
+            </options>
+            <options value="gyellow">
+                <title xml:lang="ko">노랑연두</title>
+            </options>
+            <options value="green">
+                <title xml:lang="ko">초록색</title>
+            </options>
+            <options value="emerald">
+                <title xml:lang="ko">에메랄드</title>
+            </options>
+            <options value="cyan">
+                <title xml:lang="ko">청록색</title>
+            </options>
+            <options value="skyblue">
+                <title xml:lang="ko">밝은파랑</title>
+            </options>
+            <options value="black">
+                <title xml:lang="ko">검은색</title>
+            </options>
+        </var>
+
+        <var name="logo_image" type="image">
+            <title xml:lang="ko">로고이미지</title>
+            <description xml:lang="ko">레이아웃의 상단에 표시될 로고이미지를 입력하세요. (세로길이가 50px인 투명이미지가 가장 어울립니다.)</description>
+        </var>
+		
+		<var name="logo_text" type="text">
+            <title xml:lang="ko">로고문자</title>
+            <description xml:lang="ko">레이아웃의 상단에 표시될 로고문자를 입력하세요. (로고 미사용시 대체문자로 표시됩니다.)</description>
+        </var>
+
+        <var name="cheader_txt" type="textarea">
+            <title xml:lang="ko">내용헤더</title>
+            <description xml:lang="ko">내용의 헤더 내용을 입력하세요. (HTML 태그 가능)</description>
+        </var>
+
+        <var name="cfooter_txt" type="textarea">
+            <title xml:lang="ko">내용푸터</title>
+            <description xml:lang="ko">내용의 푸터 내용을 입력하세요. (HTML 태그 가능)</description>
+        </var>
+	</extra_vars>
+
+    <menus>
+        <menu name="main_menu" maxdepth="3" default="true">
+            <title xml:lang="ko">상단 메뉴</title>
+        </menu>
+    </menus>
+</layout>

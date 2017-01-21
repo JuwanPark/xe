@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+#smenu_srch .iText,
+#smenu_srch button {
+	background-color: #002a00;
+}
+
+#login_btn svg.active,
+#login_window .idpwWrap .login,
+#sider_nav h3 a,
+#sider_nav ul.smenu_3rdlevel {
+	background-color: #005500;
+}
+
+#sider_nav ul.smenu_3rdlevel li a {
+	border-bottom: 3px solid #005500;
+}
+
+#sider_nav,
+#login_window .idpw input[type=text],
+#login_window .idpw input[type=password] {
+	background-color: #007f00;
+}
+
+
+#sider_nav ul.smenu_2ndlevel li a {
+	border-bottom: 4px solid #007f00;
+}
+
+a:link, a:visited {
+	color: #00aa00;
+}
+
+#topheader, .dialog_tline {
+	background-color: #00aa00;
+}
+
+
+#header_nav ul li a {
+	border-bottom: 5px solid #00aa00;
+}
+
+
+a:active, a:hover {
+	/* 흰 바탕에 보이지 않는 #55ff55 색을 다른 색으로 대체 */
+	color: #55d455;
+}
+
+#header_nav ul li.active a               { border-bottom: 5px solid #55ff55; }
+#sider_nav ul.smenu_2ndlevel li.active a { border-bottom: 4px solid #55ff55; }
+#sider_nav ul.smenu_3rdlevel li.active a { border-bottom: 3px solid #55ff55; }
+
+#topheader a:active, #topheader a:hover,
+#sider_nav a:active, #sider_nav a:hover,
+#login_window .idpwWrap .login:active,
+#login_window .idpwWrap .login:hover {
+	color: #aaffaa;
+}
+
+#smenu_srch button:active svg .stro,
+#smenu_srch button:hover svg .stro,
+#login_close:active svg .stro,
+#login_close:hover svg .stro,
+#login_btn svg.active .stro {
+	stroke: #aaffaa;
+}
+
+#login_btn svg.active .poly {
+	fill: #aaffaa;
+}
