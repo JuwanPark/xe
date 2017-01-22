@@ -86,7 +86,7 @@ body {
 	float: right;
 }
 
-#login_btn svg {
+#login_btn svg, #toTop svg {
 	width: 40px;
 	height: 40px;
 }
@@ -97,7 +97,7 @@ body {
 	fill: transparent;
 }
 
-#login_btn svg .poly {
+#login_btn svg .poly, #toTop svg .poly {
 	fill: #ffffff;
 }
 
@@ -444,4 +444,20 @@ button svg *, a svg * {
 	height: 21px;
 	margin: 2px 0 2px 0;
 	padding: 0 0 0 0;
+}
+
+
+/* 위로 올리기 */
+#toTop {
+    z-index: 10000;
+    width: 40px;
+    height: 40px;
+	padding: 0 0 0 0;
+    background: #000000;
+    position: fixed;
+    cursor: pointer;
+    opacity: 0.6;
+    bottom: 0px;
+    right: 0px;
+    display: none;
 }
