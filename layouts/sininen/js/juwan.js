@@ -4,9 +4,9 @@ jQuery(function($){
 		$('#sitebody').css('min-height', bodyheight + 'px');
 		
 		if ($(window).width() > 1000) {
-			$('#toTop').css('right', (($(window).width() - 1000) / 2) + 'px');
+			$('#toTop').css('right', (($(window).width() - 1000) / 2 + 10) + 'px');
 		} else {
-			$('#toTop').css('right', 0);
+			$('#toTop').css('right', '10' + px);
 		}
 	}
 
