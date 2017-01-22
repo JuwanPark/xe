@@ -6,7 +6,7 @@ jQuery(function($){
 		if ($(window).width() > 1000) {
 			$('#toTop').css('right', (($(window).width() - 1000) / 2 + 10) + 'px');
 		} else {
-			$('#toTop').css('right', '10' + px);
+			$('#toTop').css('right', 10 + 'px');
 		}
 	}
 
