@@ -457,7 +457,6 @@ button svg *, a svg * {
     position: fixed;
     cursor: pointer;
     opacity: 0.6;
-    bottom: 0px;
-    right: 0px;
+    bottom: 10px;
     display: none;
 }
