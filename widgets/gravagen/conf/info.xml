@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget version="0.2">
+	<title xml:lang="ko">그라바타 생성기</title>
+	<title xml:lang="en">Gravatar Generator</title>
+	<description xml:lang="ko">그라바타를 생성합니다.</description>
+	<description xml:lang="en">This widget generates gravatar.</description>
+	<version>1.0</version>
+	<date>2017-01-22</date>
+	<author email_address="park_juwan@naver.com" link="http://parkjuwan.dothome.co.kr/">
+		<name xml:lang="ko">Juwan Park</name>
+		<name xml:lang="en">Juwan Park</name>
+	</author>
+
+	<extra_vars>
+		<var id="user_email">
+			<type>text</type>
+			<name xml:lang="ko">메일 주소</name>
+			<name xml:lang="en">Email address</name>
+			<description xml:lang="ko">그라바타를 가져오기 위한 메일 주소입니다.</description>
+			<description xml:lang="en">An e-mail address to load Gravatar.</description>
+		</var>
+
+		<var id="image_size">
+			<type>text</type>
+			<name xml:lang="ko">이미지 크기</name>
+			<name xml:lang="en">Image size</name>
+			<description xml:lang="ko">이미지 크기를 지정할 수 있습니다. (기본값은 80입니다)</description>
+			<description xml:lang="en">Image size can be assigned. (Default value is 80)</description>
+		</var>
+		
+		<var id="default_image">
+			<type>select</type>
+			<name xml:lang="ko">기본 이미지 종류</name>
+			<name xml:lang="en">Default image</name>
+			<description xml:lang="ko">그라바타가 없을 때 기본으로 나타날 이미지 종류입니다. (*표는 랜덤 이미지)</description>
+			<description xml:lang="en">An image to appear when has no matching gravatar image. (* mark means random image)</description>
+			<options>
+				<value></value>
+				<name xml:lang="ko">선택안함 (G 표시)</name>
+				<name xml:lang="en">None (G sign)</name>
+			</options>
+			<options>
+				<value>mm</value>
+				<name xml:lang="ko">mm</name>
+				<name xml:lang="en">mm</name>
+			</options>
+			<options>
+				<value>identicon</value>
+				<name xml:lang="ko">identicon *</name>
+				<name xml:lang="en">identicon *</name>
+			</options>
+			<options>
+				<value>monsterid</value>
+				<name xml:lang="ko">monsterid *</name>
+				<name xml:lang="en">monsterid *</name>
+			</options>
+			<options>
+				<value>wavatar</value>
+				<name xml:lang="ko">wavatar *</name>
+				<name xml:lang="en">wavatar *</name>
+			</options>
+			<options>
+				<value>retro</value>
+				<name xml:lang="ko">retro *</name>
+				<name xml:lang="en">retro *</name>
+			</options>
+			<options>
+				<value>blank</value>
+				<name xml:lang="ko">blank</name>
+				<name xml:lang="en">blank</name>
+			</options>
+		</var>
+	</extra_vars>
+</widget>

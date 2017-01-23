@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin version="0.2">
+	<title xml:lang="ko">그라바타 위젯 스킨</title>
+	<title xml:lang="en">Gravatar widget skin</title>
+	<description xml:lang="ko">그라바타 위젯 전용 스킨 입니다.</description>
+	<description xml:lang="en">Gravatar widget skin</description>
+	<version>1.0</version>
+	<date>2017-01-22</date>
+	<author email_address="park_juwan@naver.com" link="http://parkjuwan.dothome.co.kr/">
+		<name xml:lang="ko">Juwan Park</name>
+		<name xml:lang="en">Juwan Park</name>
+	</author>
+</skin>
