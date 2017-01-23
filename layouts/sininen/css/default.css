@@ -4,13 +4,13 @@
 
 /* 기본설정 */
 *, input, button, textarea {
-  font-family: 'Ubuntu', 'Nanum Gothic', '나눔고딕', sans-serif;
-  /* 기본 폰트는 우분투체. 단, 한글은 나눔고딕. */
-  font-weight: 400;
+	font-family: 'Ubuntu', 'Nanum Gothic', '나눔고딕', sans-serif;
+	/* 기본 폰트는 우분투체. 단, 한글은 나눔고딕. */
+	font-weight: 400;
 }
 
 b, strong {
-	font-weight: 600;
+	font-weight: 700;
 }
 
 a:link, a:visited, a:active, a:hover {
@@ -73,7 +73,7 @@ body {
 	height: 30px;
 	line-height: 30px;
 	font-size: 24px;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 3px;
 	display: block;
 }
@@ -116,7 +116,7 @@ body {
 	white-space: nowrap;
 	line-height: 20px;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 700;
 	padding: 10px 8px 5px 8px;
 }
 
@@ -149,7 +149,7 @@ body {
 #sider_nav h3 a {
 	padding: 4px 10px 6px 10px;
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 #sider_nav ul.smenu_2ndlevel li a {
@@ -237,33 +237,6 @@ body {
 	color: #ffffff;
 }
 
-/* 태블릿용 */
-/* Tablet Layout: 481px to 960px. Inherits styles from: Mobile Layout. */
-@media only screen and (min-width: 481px) {
-
-#sider_nav ul.smenu_3rdlevel {
-	width: calc(100% - 20px);
-	padding-left: 20px;
-}
-
-}
-
-/* 데스크톱용 */
-/* Desktop Layout: 961px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
-@media only screen and (min-width: 961px) {
-
-}
-
-/* 전환효과 및 애니메이션 */
-a, input, textarea, button {
-	-webkit-transition: background .25s, color .25s, border .25s;
-	transition: background .25s, color .25s, border .25s;
-}
-
-button svg *, a svg * {
-	-webkit-transition: all .25s;
-	transition: all .25s;
-}
 
 /* 16픽셀 폰트용 */
 .font16 {
@@ -404,7 +377,7 @@ button svg *, a svg * {
 }
 
 #login_window .userName a:first-of-type {
-	font-weight: 600;
+	font-weight: 700;
 	max-width: 180px;
 	overflow-x: hidden;
 	white-space: nowrap;
@@ -459,4 +432,39 @@ button svg *, a svg * {
     opacity: 0.6;
     bottom: 10px;
     display: none;
+}
+
+
+/* 태블릿용 1 */
+/* Tablet Layout 1: 481px to 720px. Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 481px) {
+
+#sider_nav ul.smenu_3rdlevel {
+	width: calc(100% - 20px);
+	padding-left: 20px;
+}
+
+}
+
+/* 태블릿용 2 */
+/* Tablet Layout 2: 721px to a max of 960px.  Inherits styles from: Mobile Layout and Tablet Layout 1. */
+@media only screen and (min-width: 721px) {
+
+}
+
+/* 데스크톱용 */
+/* Desktop Layout: 961px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media only screen and (min-width: 961px) {
+
+}
+
+/* 전환효과 및 애니메이션 */
+a, input, textarea, button {
+	-webkit-transition: background .25s, color .25s, border .25s;
+	transition: background .25s, color .25s, border .25s;
+}
+
+button svg *, a svg * {
+	-webkit-transition: all .25s;
+	transition: all .25s;
 }
