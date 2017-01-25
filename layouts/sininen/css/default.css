@@ -9,6 +9,10 @@
 	font-weight: 400;
 }
 
+pre, code, kbd, samp {
+	font-family: monospace;
+}
+
 b, strong {
 	font-weight: 700;
 }
