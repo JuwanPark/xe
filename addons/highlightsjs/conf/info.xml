@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+	<title xml:lang="ko">highlights.js 애드온</title>
+	<description xml:lang="ko">highlights.js 구문강조기를 사용합니다.</description>
+	<version>1.0</version>
+	<date>2017-01-25</date>
+	<author email_address="park_juwan@naver.com" link="http://parkjuwan.dothome.co.kr/">
+		<name xml:lang="ko">Juwan Park</name>
+	</author>
+	<author link="https://highlightjs.org/">
+		<name xml:lang="ko">highlight.js</name>
+	</author>
+
+	<extra_vars>
+		<var name="hostlink" type="select">
+			<title xml:lang="ko">호스트 선택</title>
+			<description xml:lang="ko">highlights.js 파일을 가져올 호스트 주소를 선택합니다.
+				'이 계정에 직접 설치' 선택시 경로는 /xe/addons/highlightsjs/custom/ 입니다.</description>
+			<options value="cdnjs">
+				<title xml:lang="ko">cdnjs</title>
+			</options>
+			<options value="jsdelivr">
+				<title xml:lang="ko">jsdelivr</title>
+			</options>
+			<options value="direct">
+				<title xml:lang="ko">이 계정에 직접 설치</title>
+			</options>
+		</var>
+
+		<var name="syntax_style" type="select">
+			<title xml:lang="ko">스타일</title>
+			<description xml:lang="ko">구문강조기에 사용할 색 구성입니다.</description>
+			<options value="default">
+				<title xml:lang="ko">Default</title>
+			</options>
+			<options value="agate">
+				<title xml:lang="ko">Agate</title>
+			</options>
+			<options value="androidstudio">
+				<title xml:lang="ko">AndroidStudio</title>
+			</options>
+			<options value="arduino-light">
+				<title xml:lang="ko">Arduino Light</title>
+			</options>
+			<options value="arta">
+				<title xml:lang="ko">Arta</title>
+			</options>
+			<options value="ascetic">
+				<title xml:lang="ko">Ascetic</title>
+			</options>
+			<options value="atelier-cave-dark">
+				<title xml:lang="ko">Atelier Cave Dark</title>
+			</options>
+			<options value="atelier-cave-light">
+				<title xml:lang="ko">Atelier Cave Light</title>
+			</options>
+			<options value="atelier-dune-dark">
+				<title xml:lang="ko">Atelier Dune Dark</title>
+			</options>
+			<options value="atelier-dune-light">
+				<title xml:lang="ko">Atelier Dune Light</title>
+			</options>
+			<options value="atelier-estuary-dark">
+				<title xml:lang="ko">Atelier Estuary Dark</title>
+			</options>
+			<options value="atelier-estuary-light">
+				<title xml:lang="ko">Atelier Estuary Light</title>
+			</options>
+			<options value="atelier-forest-dark">
+				<title xml:lang="ko">Atelier Forest Dark</title>
+			</options>
+			<options value="atelier-forest-light">
+				<title xml:lang="ko">Atelier Forest Light</title>
+			</options>
+			<options value="atelier-heath-dark">
+				<title xml:lang="ko">Atelier Heath Dark</title>
+			</options>
+			<options value="atelier-heath-light">
+				<title xml:lang="ko">Atelier Heath Light</title>
+			</options>
+			<options value="atelier-lakeside-dark">
+				<title xml:lang="ko">Atelier Lakeside Dark</title>
+			</options>
+			<options value="atelier-lakeside-light">
+				<title xml:lang="ko">Atelier Lakeside Light</title>
+			</options>
+			<options value="atelier-plateau-dark">
+				<title xml:lang="ko">Atelier Plateau Dark</title>
+			</options>
+			<options value="atelier-plateau-light">
+				<title xml:lang="ko">Atelier Plateau Light</title>
+			</options>
+			<options value="atelier-savanna-dark">
+				<title xml:lang="ko">Atelier Savanna Dark</title>
+			</options>
+			<options value="atelier-savanna-light">
+				<title xml:lang="ko">Atelier Savanna Light</title>
+			</options>
+			<options value="atelier-seaside-dark">
+				<title xml:lang="ko">Atelier Seaside Dark</title>
+			</options>
+			<options value="atelier-seaside-light">
+				<title xml:lang="ko">Atelier Seaside Light</title>
+			</options>
+			<options value="atelier-sulphurpool-dark">
+				<title xml:lang="ko">Atelier Sulphurpool Dark</title>
+			</options>
+			<options value="atelier-sulphurpool-light">
+				<title xml:lang="ko">Atelier Sulphurpool Light</title>
+			</options>
+			<options value="atom-one-dark">
+				<title xml:lang="ko">Atom One Dark</title>
+			</options>
+			<options value="atom-one-light">
+				<title xml:lang="ko">Atom One Light</title>
+			</options>
+			<options value="brown-paper">
+				<title xml:lang="ko">Brown Paper</title>
+			</options>
+			<options value="codepen-embed">
+				<title xml:lang="ko">Codepen Embed</title>
+			</options>
+			<options value="color-brewer">
+				<title xml:lang="ko">Color Brewer</title>
+			</options>
+			<options value="darcula">
+				<title xml:lang="ko">Darcula</title>
+			</options>
+			<options value="dark">
+				<title xml:lang="ko">Dark</title>
+			</options>
+			<options value="darkula">
+				<title xml:lang="ko">Darkula</title>
+			</options>
+			<options value="docco">
+				<title xml:lang="ko">Docco</title>
+			</options>
+			<options value="dracula">
+				<title xml:lang="ko">Dracula</title>
+			</options>
+			<options value="far">
+				<title xml:lang="ko">Far</title>
+			</options>
+			<options value="foundation">
+				<title xml:lang="ko">Foundation</title>
+			</options>
+			<options value="github-gist">
+				<title xml:lang="ko">Github Gist</title>
+			</options>
+			<options value="github">
+				<title xml:lang="ko">Github</title>
+			</options>
+			<options value="googlecode">
+				<title xml:lang="ko">Googlecode</title>
+			</options>
+			<options value="grayscale">
+				<title xml:lang="ko">Grayscale</title>
+			</options>
+			<options value="gruvbox-dark">
+				<title xml:lang="ko">Gruvbox Dark</title>
+			</options>
+			<options value="gruvbox-light">
+				<title xml:lang="ko">Gruvbox Light</title>
+			</options>
+			<options value="hopscotch">
+				<title xml:lang="ko">Hopscotch</title>
+			</options>
+			<options value="hybrid">
+				<title xml:lang="ko">Hybrid</title>
+			</options>
+			<options value="idea">
+				<title xml:lang="ko">Idea</title>
+			</options>
+			<options value="ir-black">
+				<title xml:lang="ko">Ir Black</title>
+			</options>
+			<options value="kimbie-dark">
+				<title xml:lang="ko">Kimbie Dark</title>
+			</options>
+			<options value="kimbie-light">
+				<title xml:lang="ko">Kimbie Light</title>
+			</options>
+			<options value="magula">
+				<title xml:lang="ko">Magula</title>
+			</options>
+			<options value="mono-blue">
+				<title xml:lang="ko">Mono Blue</title>
+			</options>
+			<options value="monokai-sublime">
+				<title xml:lang="ko">Monokai Sublime</title>
+			</options>
+			<options value="monokai">
+				<title xml:lang="ko">Monokai</title>
+			</options>
+			<options value="obsidian">
+				<title xml:lang="ko">Obsidian</title>
+			</options>
+			<options value="ocean">
+				<title xml:lang="ko">Ocean</title>
+			</options>
+			<options value="paraiso-dark">
+				<title xml:lang="ko">Paraiso Dark</title>
+			</options>
+			<options value="paraiso-light">
+				<title xml:lang="ko">Paraiso Light</title>
+			</options>
+			<options value="pojoaque">
+				<title xml:lang="ko">Pojoaque</title>
+			</options>
+			<options value="purebasic">
+				<title xml:lang="ko">Purebasic</title>
+			</options>
+			<options value="qtcreator-dark">
+				<title xml:lang="ko">Qtcreator Dark</title>
+			</options>
+			<options value="qtcreator-light">
+				<title xml:lang="ko">Qtcreator Light</title>
+			</options>
+			<options value="railscasts">
+				<title xml:lang="ko">Railscasts</title>
+			</options>
+			<options value="rainbow">
+				<title xml:lang="ko">Rainbow</title>
+			</options>
+			<options value="school-book">
+				<title xml:lang="ko">School Book</title>
+			</options>
+			<options value="solarized-dark">
+				<title xml:lang="ko">Solarized Dark</title>
+			</options>
+			<options value="solarized-light">
+				<title xml:lang="ko">Solarized Light</title>
+			</options>
+			<options value="sunburst">
+				<title xml:lang="ko">Sunburst</title>
+			</options>
+			<options value="tomorrow-night-blue">
+				<title xml:lang="ko">Tomorrow Night Blue</title>
+			</options>
+			<options value="tomorrow-night-bright">
+				<title xml:lang="ko">Tomorrow Night Bright</title>
+			</options>
+			<options value="tomorrow-night-eighties">
+				<title xml:lang="ko">Tomorrow Night Eighties</title>
+			</options>
+			<options value="tomorrow-night">
+				<title xml:lang="ko">Tomorrow Night</title>
+			</options>
+			<options value="tomorrow">
+				<title xml:lang="ko">Tomorrow</title>
+			</options>
+			<options value="vs">
+				<title xml:lang="ko">Vs</title>
+			</options>
+			<options value="xcode">
+				<title xml:lang="ko">Xcode</title>
+			</options>
+			<options value="xt-256">
+				<title xml:lang="ko">Xt 256</title>
+			</options>
+			<options value="zenburn">
+				<title xml:lang="ko">Zenburn</title>
+			</options>
+		</var>
+
+		<var name="ngc_import" type="select">
+			<title xml:lang="ko">나눔고딕코딩 글꼴 가져오기</title>
+			<description xml:lang="ko">구글 호스트에서 나눔고딕코딩 글꼴을 가져오기(import)합니다.
+				레이아웃에서 자체적으로 글꼴을 가져와서 직접 세팅한 경우 '가져오지 않기'를 선택하시기 바랍니다.</description>
+			<options value="yes">
+				<title xml:lang="ko">가져오기</title>
+			</options>
+			<options value="no">
+				<title xml:lang="ko">가져오지 않기</title>
+			</options>
+		</var>
+
+		<var name="line_number" type="select">
+			<title xml:lang="ko">줄 번호 넣기</title>
+			<description xml:lang="ko">코드에 줄 번호를 넣습니다.</description>
+			<options value="yes">
+				<title xml:lang="ko">넣기</title>
+			</options>
+			<options value="no">
+				<title xml:lang="ko">넣지 않기</title>
+			</options>
+		</var>
+
+		<var name="tabsize" type="text">
+			<title xml:lang="ko">들여쓰기 탭 대체길이</title>
+			<description xml:lang="ko">들여쓰기 탭을 연속된 공백 문자로 대체할 길이입니다. (0 또는 미입력: 대체안함)</description>
+		</var>
+	</extra_vars>
+</addon>
