@@ -39,7 +39,7 @@ if($called_position == 'before_module_proc'){
 	Context::addHtmlHeader("<!-- Start of highlights.js addon -->");
 
 	Context::addHtmlHeader("<link rel=\"stylesheet\" href=\"" .$css_location . "\" />");
-	if ($linenum) { Context::addHtmlHeader("<link rel=\"stylesheet\" href=\"./addons/highlightsjs/line-numbers.css\"></script>"); }
+	if ($linenum) { Context::addHtmlHeader("<link rel=\"stylesheet\" href=\"./addons/highlightsjs/line-numbers.css\" />"); }
 	if ($addon_info->ngc_import == 'yes') {
 		Context::addHtmlHeader("<link rel=\"stylesheet\" href=\"./addons/highlightsjs/ngc_import.css\" />");
 	}
