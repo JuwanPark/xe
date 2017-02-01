@@ -24,7 +24,7 @@ jQuery(function($){
 		});
 		
 		$("#toTop").click(function () {
-			$("body").animate({ scrollTop: 0 }, 200);
+			$("html, body").animate({ scrollTop:0 }, '200', 'swing');
 			return false;
 		});
 	});
@@ -35,10 +35,8 @@ jQuery(function($){
 
 	$(window).scroll(function() {
 		if ($(this).scrollTop() != 0) {
-			/* $('#toTop').fadeIn(); */
 			$('#toTop').fadeIn(200);
 		} else {
-			/* $('#toTop').fadeOut(); */
 			$('#toTop').fadeOut(200);
 		}
 	});	
