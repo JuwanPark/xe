@@ -213,7 +213,7 @@ body {
 }
 
 #bodycont {
-	width: calc(100%-20px);
+	width: calc(100% - 20px);
 	display: block;
 	margin: 10px 10px 10px 10px;
 	text-align: justify;
